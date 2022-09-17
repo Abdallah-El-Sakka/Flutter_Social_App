@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "720021806724",
+    "project_id": "flutter-messenger-935da",
+    "storage_bucket": "flutter-messenger-935da.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:720021806724:android:559611b4665465441eecd1",
+        "android_client_info": {
+          "package_name": "com.example.fluttermessenger"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "720021806724-ueg3rs7pj30dl5lj2cslid4q0npuk26c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBadoEDQLfbBeO6ayMUJ4RAdpBUZsrXQ40"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "720021806724-ueg3rs7pj30dl5lj2cslid4q0npuk26c.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "720021806724-ornmnd7f2s4nnd2uhgd93pkkhoegbf5h.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.fluttermessenger"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
