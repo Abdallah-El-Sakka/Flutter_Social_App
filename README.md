@@ -1,4 +1,4 @@
-# fluttermessenger
+# Flutter Social App
 
 I created this project using Flutter which depends on the dart language.
 I also used Firebase to authenticate users, save users' data, and send cloud messaging.
