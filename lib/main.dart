@@ -18,12 +18,12 @@ void main() async
 
   WidgetsFlutterBinding.ensureInitialized();
 
-  // for cloud messaging
-  var token = await FirebaseMessaging.instance.getToken();
-
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
+
+  // for cloud messaging
+  //var token = await FirebaseMessaging.instance.getToken();
 
   await CacheHelper.init();
 

@@ -4,6 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:fluttermessenger/Cubit/home_bloc/home_cubit.dart';
 import 'package:fluttermessenger/Cubit/home_bloc/home_states.dart';
 import 'package:fluttermessenger/Layout/Home/edit_profile_screen.dart';
+import 'package:fluttermessenger/Layout/Home/newpost_screen.dart';
 import 'package:fluttermessenger/Layout/fixed_mat.dart';
 import 'package:fluttermessenger/Layout/registration/login_screen.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -91,98 +92,6 @@ class ProfileScreen extends StatelessWidget
 
                     SizedBox(height: 10,),
 
-                    Padding(
-                      padding: const EdgeInsets.all(10.0),
-                      child: Row(
-                        children:
-                        [
-                          Expanded(
-                            child: InkWell(
-                              onTap: (){},
-                              child: Container(
-                                padding: EdgeInsetsDirectional.zero,
-                                child: Column(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                  children:
-                                  [
-                                    Text('Posts',maxLines: 1,overflow: TextOverflow.ellipsis,style: TextStyle(fontSize: 15,fontWeight: FontWeight.w900),),
-                                    SizedBox(height: 20,),
-                                    Text('0',style: TextStyle(fontWeight: FontWeight.w500,fontSize: 15),)
-                                  ],
-                                ),
-                                margin: EdgeInsetsDirectional.all(10),
-                                height: 60,
-                              ),
-                            ),
-                          ),
-
-                          Expanded(
-                            child: InkWell(
-                              onTap: (){},
-                              child: Container(
-                                padding: EdgeInsetsDirectional.zero,
-                                child: Column(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                  children:
-                                  [
-                                    Text('Photos',maxLines: 1,overflow: TextOverflow.ellipsis,style: TextStyle(fontSize: 15,fontWeight: FontWeight.w900),),
-                                    SizedBox(height: 20,),
-                                    Text('0',style: TextStyle(fontWeight: FontWeight.w500,fontSize: 15),)
-                                  ],
-                                ),
-                                margin: EdgeInsetsDirectional.all(10),
-                                height: 60,
-                              ),
-                            ),
-                          ),
-
-                          Expanded(
-                            child: InkWell(
-                              onTap: (){},
-                              child: Container(
-                                padding: EdgeInsetsDirectional.zero,
-                                child: Column(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                  children:
-                                  [
-                                    Text('Followers',style: TextStyle(fontSize: 15,fontWeight: FontWeight.w900),maxLines: 1,overflow: TextOverflow.ellipsis),
-                                    SizedBox(height: 20,),
-                                    Text('0',style: TextStyle(fontWeight: FontWeight.w500,fontSize: 15),)
-                                  ],
-                                ),
-                                margin: EdgeInsetsDirectional.all(10),
-                                height: 60,
-                              ),
-                            ),
-                          ),
-
-                          Expanded(
-                            child: InkWell(
-                              onTap: (){},
-                              child: Container(
-                                padding: EdgeInsetsDirectional.zero,
-                                child: Column(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                  children:
-                                  [
-                                    Text('Following',maxLines: 1,overflow: TextOverflow.ellipsis,style: TextStyle(fontSize: 15,fontWeight: FontWeight.w900),),
-                                    SizedBox(height: 20,),
-                                    Text('0',style: TextStyle(fontWeight: FontWeight.w500,fontSize: 15),)
-                                  ],
-                                ),
-                                margin: EdgeInsetsDirectional.all(10),
-                                height: 60,
-                              ),
-                            ),
-                          ),
-
-                        ],
-                      ),
-                    ),
 
                     Padding(
                       padding: const EdgeInsets.all(10.0),
@@ -201,7 +110,10 @@ class ProfileScreen extends StatelessWidget
                               disabledElevation: 0.0,
                               //shape: ,
                               color: Colors.white,
-                                onPressed: (){},
+                                onPressed: ()
+                                {
+                                  Navigator.push(context, MaterialPageRoute(builder: (context) => NewPostScreen()));
+                                },
                                 child: Text(
                                     'Add Posts',
                                   style: GoogleFonts.poppins(

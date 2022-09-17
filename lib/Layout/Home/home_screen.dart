@@ -169,17 +169,6 @@ class HomeScreen extends StatelessWidget
 
             SizedBox(width: 10,),
 
-            IconButton(
-                icon: Icon(Icons.chat_bubble_outline_rounded,color: Colors.grey,size: 20,),
-              onPressed: (){},
-            ),
-            SizedBox(width: 5,),
-            Text(
-              '0',
-              style: TextStyle(
-                  color: Colors.grey
-              ),
-            ),
           ],
         ),
 

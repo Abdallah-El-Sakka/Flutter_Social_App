@@ -13,7 +13,6 @@ import 'newpost_screen.dart';
 
 class NavHome extends StatefulWidget
 {
-
   @override
   State<NavHome> createState() => _NavHomeState();
 }
@@ -70,16 +69,6 @@ class _NavHomeState extends State<NavHome>
                       });
                     },
                     icon: Icon(Iconsax.add_square4 , color: Colors.red,)),
-                Container(
-                  margin: EdgeInsetsDirectional.only(
-                    start: 5,
-                    end: 10
-                  ),
-                  child: IconButton(
-                      onPressed: (){},
-                      icon: Icon(Iconsax.search_normal_1, color: Colors.black,)
-                  ),
-                ),
               ],
 
             ),

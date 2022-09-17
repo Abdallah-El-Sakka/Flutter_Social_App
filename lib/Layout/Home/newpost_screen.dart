@@ -5,6 +5,9 @@ import 'package:fluttermessenger/Cubit/home_bloc/home_states.dart';
 import 'package:fluttermessenger/Layout/fixed_mat.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:iconsax/iconsax.dart';
+import '../Emoji_Picker/Emoji_picker_screen.dart';
+
+var postTextController = TextEditingController(text: postText);
 
 class NewPostScreen extends StatefulWidget
 {
@@ -13,7 +16,8 @@ class NewPostScreen extends StatefulWidget
   State<NewPostScreen> createState() => _NewPostScreenState();
 }
 
-class _NewPostScreenState extends State<NewPostScreen> {
+class _NewPostScreenState extends State<NewPostScreen>
+{
   @override
   Widget build(BuildContext context)
   {
@@ -32,8 +36,6 @@ class _NewPostScreenState extends State<NewPostScreen> {
         {
 
           var cubit = HomeCubit.get(context);
-
-          var postTextController = TextEditingController(text: postText);
 
           bool isLoading = (state is UploadPostPhotoLoadingState || state is CreatePostLoadingState);
 
@@ -210,7 +212,10 @@ class _NewPostScreenState extends State<NewPostScreen> {
                         SizedBox(width: 10,),
                         Expanded(
                           child: TextButton(
-                              onPressed: (){}
+                              onPressed: ()
+                              {
+                                Navigator.push(context, MaterialPageRoute(builder: (context) => EmojiPickerScreen()));
+                              }
                               , child: Row(
                             mainAxisSize: MainAxisSize.min,
                             children:
