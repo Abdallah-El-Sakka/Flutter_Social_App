@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:fluttermessenger/Cubit/register_bloc/register_states.dart';
@@ -105,8 +106,8 @@ class LoginScreen extends StatelessWidget
                           state is LoginLoadingState
                           ?
                           Container(
-                            margin: EdgeInsetsDirectional.all(22),
-                              child: CircularProgressIndicator()
+                            margin: EdgeInsetsDirectional.all(30),
+                              child: CupertinoActivityIndicator()
                           )
                           :
                           Container(

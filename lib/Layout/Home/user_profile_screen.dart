@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:fluttermessenger/Cubit/home_bloc/home_cubit.dart';
 import 'package:fluttermessenger/Cubit/home_bloc/home_states.dart';
+import 'package:fluttermessenger/Layout/Chat/conversation_screen.dart';
 import 'package:fluttermessenger/Layout/Home/edit_profile_screen.dart';
 import 'package:fluttermessenger/Layout/fixed_mat.dart';
 import 'package:fluttermessenger/Layout/registration/login_screen.dart';
@@ -103,7 +104,38 @@ class UserProfileScreen extends StatelessWidget
                         style: Theme.of(context).textTheme.caption,
                       ),
 
-                      SizedBox(height: 10,),
+                      SizedBox(height: 20,),
+
+                      MaterialButton(
+                          elevation: 0.0,
+                          padding: EdgeInsetsDirectional.all(10),
+                          focusElevation: 0.0,
+                          highlightElevation: 0.0,
+                          hoverElevation: 0.0,
+                          disabledElevation: 0.0,
+                          //shape: ,
+                          color: Colors.white,
+                          onPressed: ()
+                          {
+                            Navigator.push(context, MaterialPageRoute(builder: (context) => ConversationScreen(model: model)));
+                          },
+                          child: Row(
+                            mainAxisSize: MainAxisSize.min,
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              Icon(Iconsax.message, color: Colors.blue,),
+                              SizedBox(width: 10,),
+                              Text(
+                                'Contact',
+                                style: GoogleFonts.poppins(
+                                    color: Colors.blue,
+                                    fontSize: 15
+                                ),
+                              ),
+                            ],
+                          )
+                      ),
 
                     ]
                 ),

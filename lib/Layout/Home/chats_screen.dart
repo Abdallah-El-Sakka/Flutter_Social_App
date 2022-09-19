@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:fluttermessenger/Cubit/home_bloc/home_cubit.dart';
 import 'package:fluttermessenger/Layout/Chat/conversation_screen.dart';
-
 import '../../Cubit/home_bloc/home_states.dart';
 
 class ChatsScreen extends StatelessWidget

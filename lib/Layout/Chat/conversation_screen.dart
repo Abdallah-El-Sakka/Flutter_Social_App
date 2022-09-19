@@ -95,7 +95,7 @@ class ConversationScreen extends StatelessWidget
                             child: TextFormField(
                               controller: messageController,
                               decoration: InputDecoration(
-                                hintText: 'Enter yout message.',
+                                hintText: 'Type a message',
                                 border: OutlineInputBorder(
                                   borderSide: BorderSide.none
                                 )

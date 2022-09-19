@@ -47,7 +47,7 @@ class MyApp extends StatelessWidget
         '/editProfileScreen' : (context) => EditProfileScreen(),
         '/newPostScreen' : (context) => NewPostScreen()
       },
-      title: 'Flutter Messenger',
+      title: 'Flutter Social App',
       theme: ThemeData(
         appBarTheme: AppBarTheme(
           backgroundColor: Colors.grey.shade100,
